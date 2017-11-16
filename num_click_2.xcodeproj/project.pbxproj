@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9735D5D1FBD29C800CF43F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9735D5C1FBD29C800CF43F7 /* AppDelegate.swift */; };
-		C9735D5F1FBD29C800CF43F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9735D5E1FBD29C800CF43F7 /* ViewController.swift */; };
+		C9735D5D1FBD29C800CF43F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9735D5C1FBD29C800CF43F7 /* main.swift */; };
 		C9735D611FBD29C800CF43F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9735D601FBD29C800CF43F7 /* Assets.xcassets */; };
-		C9735D641FBD29C800CF43F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9735D621FBD29C800CF43F7 /* Main.storyboard */; };
+		C9735D6C1FBD2E2E00CF43F7 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9735D6B1FBD2E2E00CF43F7 /* CGPoint+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9735D591FBD29C800CF43F7 /* num_click_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = num_click_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9735D5C1FBD29C800CF43F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9735D5E1FBD29C800CF43F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9735D5C1FBD29C800CF43F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C9735D601FBD29C800CF43F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C9735D631FBD29C800CF43F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9735D651FBD29C800CF43F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9735D6B1FBD2E2E00CF43F7 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +50,9 @@
 		C9735D5B1FBD29C800CF43F7 /* num_click_2 */ = {
 			isa = PBXGroup;
 			children = (
-				C9735D5C1FBD29C800CF43F7 /* AppDelegate.swift */,
-				C9735D5E1FBD29C800CF43F7 /* ViewController.swift */,
+				C9735D6B1FBD2E2E00CF43F7 /* CGPoint+Extensions.swift */,
+				C9735D5C1FBD29C800CF43F7 /* main.swift */,
 				C9735D601FBD29C800CF43F7 /* Assets.xcassets */,
-				C9735D621FBD29C800CF43F7 /* Main.storyboard */,
 				C9735D651FBD29C800CF43F7 /* Info.plist */,
 			);
 			path = num_click_2;
@@ -122,7 +119,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9735D611FBD29C800CF43F7 /* Assets.xcassets in Resources */,
-				C9735D641FBD29C800CF43F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,23 +129,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9735D5F1FBD29C800CF43F7 /* ViewController.swift in Sources */,
-				C9735D5D1FBD29C800CF43F7 /* AppDelegate.swift in Sources */,
+				C9735D6C1FBD2E2E00CF43F7 /* CGPoint+Extensions.swift in Sources */,
+				C9735D5D1FBD29C800CF43F7 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C9735D621FBD29C800CF43F7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9735D631FBD29C800CF43F7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C9735D661FBD29C800CF43F7 /* Debug */ = {
@@ -248,12 +233,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7T78XPL7SP;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = num_click_2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Riley.num-click-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -262,12 +249,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7T78XPL7SP;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = num_click_2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Riley.num-click-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -291,6 +280,7 @@
 				C9735D6A1FBD29C800CF43F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
